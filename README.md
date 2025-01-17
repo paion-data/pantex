@@ -71,7 +71,7 @@ Development
 ### Running Locally
 
 ```console
-git clone git@github.com:QubitPi/pantex.git
+git clone git@github.com:paion-data/pantex.git
 cd pantex
 
 virtualenv .venv
@@ -98,14 +98,14 @@ To build a Docker container of Pantex, follow these steps:
 3. Run the following command to build the Docker image:
 
     ```consule
-    docker build -t jack20191124/pantex .
+    docker build -t paiondatahub/pantex .
     ```
 
 4. Wait for the build process to complete.
 5. Once the build is finished, we can run the Docker container using the following command:
 
     ```console
-    docker run -it --name pantex -p 7860:7860 jack20191124/pantex
+    docker run -it --name pantex -p 7860:7860 paiondatahub/pantex
     ```
 
 6. Open up browser and navigate to [http://localhost:7860](http://localhost:7860) to access the space.
@@ -124,15 +124,15 @@ The use and distribution terms for [pantex]() are covered by the [Apache License
 [Apache License Badge]: https://img.shields.io/badge/Apache%202.0-F25910.svg?style=for-the-badge&logo=Apache&logoColor=white
 [Apache License, Version 2.0]: https://www.apache.org/licenses/LICENSE-2.0
 
-[Docker Pulls Badge]: https://img.shields.io/docker/pulls/jack20191124/pantex?style=for-the-badge&logo=docker&color=2596EC
-[Docker Hub URL]: https://hub.docker.com/r/jack20191124/pantex
+[Docker Pulls Badge]: https://img.shields.io/docker/pulls/paiondatahub/pantex?style=for-the-badge&logo=docker&color=2596EC
+[Docker Hub URL]: https://hub.docker.com/r/paiondatahub/pantex
 
-[GitHub workflow status badge]: https://img.shields.io/github/actions/workflow/status/QubitPi/pantex/ci-cd.yaml?branch=master&style=for-the-badge&logo=github&logoColor=white&label=CI/CD
-[GitHub workflow status URL]: https://github.com/QubitPi/pantex/actions/workflows/ci-cd.yaml
+[GitHub workflow status badge]: https://img.shields.io/github/actions/workflow/status/paion-data/pantex/ci-cd.yaml?branch=master&style=for-the-badge&logo=github&logoColor=white&label=CI/CD
+[GitHub workflow status URL]: https://github.com/paion-data/pantex/actions/workflows/ci-cd.yaml
 
 [Hugging Face space badge]: https://img.shields.io/badge/Hugging%20Face%20Space-pantex-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white&labelColor=6B7280
-[Hugging Face space URL]: https://huggingface.co/spaces/QubitPi/pantex
-[Hugging Face sync status badge]: https://img.shields.io/github/actions/workflow/status/QubitPi/pantex/ci-cd.yaml?branch=master&style=for-the-badge&logo=github&logoColor=white&label=Hugging%20Face%20Sync%20Up
-[Hugging Face sync status URL]: https://github.com/QubitPi/pantex/actions/workflows/ci-cd.yaml
+[Hugging Face space URL]: https://huggingface.co/spaces/paion-data/pantex
+[Hugging Face sync status badge]: https://img.shields.io/github/actions/workflow/status/paion-data/pantex/ci-cd.yaml?branch=master&style=for-the-badge&logo=github&logoColor=white&label=Hugging%20Face%20Sync%20Up
+[Hugging Face sync status URL]: https://github.com/paion-data/pantex/actions/workflows/ci-cd.yaml
 
 [Python Version Badge]: https://img.shields.io/badge/Python-3.10-FFD845?labelColor=498ABC&style=for-the-badge&logo=python&logoColor=white
