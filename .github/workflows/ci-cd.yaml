@@ -93,9 +93,9 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
       - name: Image Build Test
-        run: docker build -t jack20191124/aristotle .
+        run: docker build -t jack20191124/pantex .
       - name: Startup a Container
-        run: docker run -d --name aristotle -p 7860:7860 -e SERVER_NAME=0.0.0.0 jack20191124/aristotle
+        run: docker run -d --name pantex -p 7860:7860 -e SERVER_NAME=0.0.0.0 jack20191124/pantex
       - name: Wait for container to be up and running
         uses: iFaxity/wait-on-action@v1
         with:
@@ -117,14 +117,14 @@ jobs:
         with:
           context: .
           push: true
-          tags: jack20191124/aristotle:latest
+          tags: jack20191124/pantex:latest
       - name: Push image Description
         if: github.ref == 'refs/heads/master'
         uses: peter-evans/dockerhub-description@v4
         with:
           username: jack20191124
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: jack20191124/aristotle
+          repository: jack20191124/pantex
           readme-filepath: README.md
 
   sync-to-huggingface-space:
@@ -137,6 +137,6 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Push to hub
-        run: git push https://QubitPi:$HF_TOKEN@huggingface.co/spaces/QubitPi/aristotle master:main -f
+        run: git push https://QubitPi:$HF_TOKEN@huggingface.co/spaces/QubitPi/pantex master:main -f
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}

@@ -71,7 +71,7 @@ def tts(
 
 
 with gr.Blocks() as app:
-    gr.Markdown("# <center> AI Doesn't Speak Ancient Greek. Aristotle Does! </center>")
+    gr.Markdown("# <center> AI Doesn't Speak Ancient Greek. Pantex Does! </center>")
     with gr.Row(variant="panel"):
         model = gr.Dropdown(choices=["tts-1", "tts-1-hd"], label="Model", value="tts-1")
         voice = gr.Dropdown(choices=["alloy", "echo", "fable", "onyx", "nova", "shimmer"], label="Voice Options",
